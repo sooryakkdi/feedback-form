@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { RequestRating } from './components/RequestRating';
+import { DisplayRating } from './components/DisplayRating';
 
-function App() {
+//css
+import './App.css';
+import './styles/feedbackForm.css';
+
+const App = () => {
+  const [ratingValue, setRatingValue] = useState(0);
+
+  const getRating = (value) => {
+    setRatingValue(value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mainContainer'>
+      <div className='footer'>
+        {ratingValue === 0 ? (
+          <RequestRating onSubmit={(value) => getRating(value)} />
+        ) : (
+          <DisplayRating value={ratingValue} />
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
