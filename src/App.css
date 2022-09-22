@@ -1,0 +1,15 @@
+.App {
+  background-color: #121417;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+body {
+  font-size: 93.75%;
+  display: block;
+  font-family: Overpass, sans-serif;
+}
