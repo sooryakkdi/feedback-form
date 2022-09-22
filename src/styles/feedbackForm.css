@@ -1,0 +1,143 @@
+body {
+  background-color: #121417;
+}
+body h1 h2 p {
+  margin: 0;
+}
+
+.mainContainer {
+  padding: 0 2rem;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  min-height: 90vh;
+}
+
+.feedbackDiv, .feedbackDisplayDiv {
+  border-radius: 1rem;
+  background-image: radial-gradient(farthest-side at 50% -10%, #222933, #1d242e, #181e28);
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 0 2px 1px rgba 0, 0, 0, 0.2;
+  width: 21rem;
+  max-width: 21rem;
+}
+
+.feedbackDisplayDiv {
+  max-width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.containerDiv {
+  display: flex;
+  flex-direction: "column";
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 25px 0;
+  color: #7c8798;
+  font-size: 15px;
+}
+
+.selected {
+  background-color: #959eac;
+}
+
+.roundDiv, .roundDivHover {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252d37;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 1.7px rgba(0, 0, 0, 0.1);
+}
+
+.roundDivHover {
+  width: 2.7rem;
+  height: 2.8rem;
+}
+.roundDivHover:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+.starIcon {
+  color: #fb7413;
+}
+
+.thankYouIcon {
+  max-height: 18rem;
+  max-width: 9rem;
+  width: 100%;
+}
+
+.messageDiv {
+  gap: 1.7rem;
+}
+
+.ratingHeader {
+  color: white;
+  font-size: 13px;
+}
+
+.ratingContent {
+  color: #7c8798;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.3rem;
+}
+
+.showRatingDiv {
+  color: #fb7413;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252d37;
+  border-radius: 2rem;
+  box-shadow: 0 0 2px 1.7px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  height: 2rem;
+  width: 11rem;
+}
+
+.showThankyouDiv {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  font-size: 11px;
+}
+.showThankyouDiv p {
+  color: #7c8798;
+  text-align: center;
+  font-size: 15px;
+  padding: 0 5px;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+button {
+  color: #fb7413;
+  border: 0;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.8rem 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: transform 0.2s;
+  letter-spacing: 0.1rem;
+  background-color: white;
+}
+button:hover {
+  background-color: #fb7413;
+  color: white;
+}/*# sourceMappingURL=feedbackForm.css.map */
